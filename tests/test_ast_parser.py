@@ -1,5 +1,5 @@
 import pytest
-from Orion.ast_parser import parse_file, parse_source
+from Orion import parse_file, parse_source
 
 def test_parse_file():
     source_code = """

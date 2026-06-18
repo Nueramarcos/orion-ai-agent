@@ -2,8 +2,7 @@ import pytest
 
 def test_imports():
     try:
-        from Orion import __init__
-        from Orion.ast_parser import parse_file, parse_source
+        from Orion import parse_file, parse_source
     except ImportError as e:
         pytest.fail(f"Failed to import module: {e}")
 
