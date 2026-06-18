@@ -16,10 +16,13 @@
 
 3. Install dependencies:
    ```sh
-   pip install -r requirements.txt
+   pip install -e .
    ```
 
-4. Run the AST parser CLI examples to ensure everything is set up correctly.
+4. Run the tests to ensure everything is set up correctly:
+   ```sh
+   python -m pytest -q
+   ```
 
 ## Pull Request Guidelines
 
