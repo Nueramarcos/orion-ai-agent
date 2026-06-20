@@ -3,7 +3,7 @@ Local autonomous coding agent: ingests codebases, traces bugs via AST, applies s
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
-[![CI Status](https://img.shields.io/badge/CI-Pending-blue.svg)](https://github.com/Nueramarcos/orion-ai-agent/actions)
+[![CI](https://github.com/Nueramarcos/orion-ai-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/Nueramarcos/orion-ai-agent/actions/workflows/ci.yml)
 
 ## Usage
 To use Orion AST analyser, follow these steps:
