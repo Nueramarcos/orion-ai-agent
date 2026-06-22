@@ -1,6 +1,12 @@
 import pytest
 from Orion import parse_file, parse_source
 
+def test_imports():
+    pass  # Existing test function
+
+def test_ast_parser():
+    pass  # Existing test function
+
 def test_parse_file():
     source_code = """
 def hello_world():
