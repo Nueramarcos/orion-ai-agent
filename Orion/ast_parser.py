@@ -324,8 +324,11 @@ def parse_source(source: str, filename: str = "<string>") -> ParseResult:
 
 def main():
     import argparse
+    from . import __version__
+
     p = argparse.ArgumentParser(prog="orion", description="Orion AST analyser")
-    sub = p.add_subparsers(dest="cmd", required=True)
+    p.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
+    sub = p.add_subparsers(dest="cmd")
 
     sp = sub.add_parser("scan", help="scan a project directory")
     sp.add_argument("root", help="project root")
@@ -340,6 +343,9 @@ def main():
     cf.add_argument("symbol")
 
     args = p.parse_args()
+    if not args.cmd:
+        p.print_help()
+        sys.exit(0)
 
     if args.cmd == "file":
         r = parse_file(args.path)
