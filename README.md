@@ -22,4 +22,8 @@ To use Orion AST analyser, follow these steps:
    python Orion/ast_parser.py callers <project_root> <symbol>
    ```
 
-For more information, refer to the source code in `Orion/ast_parser.py`.
+For more information, refer to the source code in `Orion/ast_parser.py.
+
+## Troubleshooting section
+- Missing file: Ensure the file exists at the specified path.
+- Parse errors: Check if the file is correctly formatted and contains valid Python code.
